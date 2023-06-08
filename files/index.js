@@ -35,6 +35,7 @@ class FileOperations {
   };
 }
 
+// ^ Use constructor instead different functions
 const file = new FileOperations(usersPath);
 const data = [{ name: 'Oleg' }, { name: 'Taya' }];
 
@@ -48,10 +49,10 @@ async function tryCatchHandler(callback) {
   }
 }
 
-// * with tryCatchHandler function without bind()
-tryCatchHandler(file.display());
+// * with tryCatchHandler function without bind() - use arrow-functions instead usual
+// tryCatchHandler(file.display());
 // tryCatchHandler(file.create(data));
-// tryCatchHandler(file.update({ name: 'Sergiy' }));
+tryCatchHandler(file.update({ name: 'Sergiy' }));
 // tryCatchHandler(file.remove());
 
 // tryCatchHandler(file.display);

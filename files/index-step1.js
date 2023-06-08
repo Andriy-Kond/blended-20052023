@@ -85,7 +85,7 @@ async function tryCatchHandler(callback) {
 // * with tryCatchHandler function
 // tryCatchHandler(file.display.bind(file));
 // tryCatchHandler(file.create.bind(file, data));
-// tryCatchHandler(file.update.bind(file, { name: 'Sergiy' }));
+tryCatchHandler(file.update.bind(file, { name: 'Sergiy' }));
 // tryCatchHandler(file.remove.bind(file));
 
 // tryCatchHandler(file.display);
